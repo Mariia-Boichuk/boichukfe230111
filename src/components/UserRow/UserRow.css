@@ -1,0 +1,37 @@
+.user-info {
+  display: flex;
+  margin: 24px 22px 24px;
+  background-color: #e5eaec;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px 15px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.user-info__name-and-role {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-info__title {
+  color: darkblue;
+  font-size: 12px;
+}
+
+.user-info__view {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  height: 36px;
+  width: 50px;
+  background-color: #008ace;
+
+  color: #fff;
+}
