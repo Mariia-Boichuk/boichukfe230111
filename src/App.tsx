@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux/es/exports";
+import { useSelector } from "react-redux";
 import { UserRow } from "./components/UserRow/UserRow";
 import { RootState } from "./store/index";
 import "./App.css";
@@ -10,8 +10,6 @@ function App() {
 
   return (
     <div className="app">
-      <p> Users</p>
-
       <div>
         {(allShown ? list : list.slice(0, 3))?.map((item) => (
           <UserRow key={item.email} userData={item} />
