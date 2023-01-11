@@ -2,7 +2,6 @@ import React from "react";
 import { cleanup, render, screen } from "@testing-library/react";
 
 import { Widget } from "./Widget";
-import userEvent from "@testing-library/user-event";
 
 const mockedData = {
   phone: "902-782-3286",
