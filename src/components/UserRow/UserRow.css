@@ -3,9 +3,9 @@
   margin: 24px 22px 24px;
   background-color: #e5eaec;
   align-items: center;
-  max-width: 100%;
+  max-width: 500px;
   padding: 10px 15px;
-  width: 400px;
+  width: 100%;
   border-radius: 10px;
 }
 

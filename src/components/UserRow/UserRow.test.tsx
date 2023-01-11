@@ -18,8 +18,6 @@ describe("UserRow", () => {
     render(<UserRow userData={mockedData} />);
   });
 
-  afterEach(cleanup);
-
   it("should render  without errors", () => {
     const row = screen.getByTestId("userInfoRow");
     expect(row).toBeInTheDocument();
