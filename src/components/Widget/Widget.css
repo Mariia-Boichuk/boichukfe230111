@@ -1,0 +1,34 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgba(33, 33, 33, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  position: absolute;
+  animation: show-modal 0.5s forwards;
+  background-color: #fff;
+  border-radius: 3px;
+  min-width: 40%;
+  min-height: 50%;
+  background-color: grey;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget .avatar {
+  border-radius: 50%;
+  display: block;
+  width: 96px;
+  height: 96px;
+}

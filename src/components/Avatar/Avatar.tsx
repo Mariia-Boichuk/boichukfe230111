@@ -9,6 +9,6 @@ export const Avatar = ({ avatarUrl }: AvatarProps): JSX.Element => (
   <img
     className="avatar"
     alt="Avatar of the user."
-    src={avatarUrl || default_avatar}
+    src={`../foto/${avatarUrl}` || default_avatar}
   />
 );

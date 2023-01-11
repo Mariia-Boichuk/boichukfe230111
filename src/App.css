@@ -1,3 +1,16 @@
 .app {
   padding: 15px;
 }
+
+.app_button {
+  padding: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  height: 36px;
+  width: 150px;
+  background-color: #008ace;
+  margin: 24px 22px 24px;
+  color: #fff;
+}

@@ -18,12 +18,12 @@
 
 .user-info__title {
   color: darkblue;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .user-info__view {
   margin: 0;
-  margin-left: auto;
+
   padding: 0;
   font-weight: 600;
   text-transform: uppercase;
@@ -32,6 +32,7 @@
   height: 36px;
   width: 50px;
   background-color: #008ace;
+  margin-left: auto;
 
   color: #fff;
 }
