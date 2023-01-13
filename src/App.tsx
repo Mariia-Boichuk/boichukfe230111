@@ -10,11 +10,10 @@ function App() {
 
   return (
     <div className="app">
-      <div>
-        {(allShown ? list : list.slice(0, 3))?.map((item) => (
-          <UserRow key={item.email} userData={item} />
-        ))}
-      </div>
+      {(allShown ? list : list.slice(0, 3))?.map((item) => (
+        <UserRow key={item.email} userData={item} />
+      ))}
+
       <button
         className="app_button"
         onClick={() => setAllShown((prev) => !prev)}

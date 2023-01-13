@@ -1,5 +1,6 @@
 .app {
   padding: 15px;
+  width: 100%;
 }
 
 .app_button {
@@ -11,6 +12,13 @@
   height: 36px;
   width: 150px;
   background-color: #008ace;
-  margin: 24px 22px 24px;
+  margin: 0px 22px 24px;
   color: #fff;
+}
+
+@media screen and (max-width: 450px) {
+  .app_button {
+    margin: 0;
+    width: 100%;
+  }
 }
