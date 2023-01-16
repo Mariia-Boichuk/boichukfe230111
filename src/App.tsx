@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { UserRow } from "./components/UserRow/UserRow";
 import { RootState } from "./store/index";
 import "./App.css";
+import { setFullList, setShortList } from "./store/userSlice";
 
 function App() {
-  const list = useSelector((state: RootState) => state.users.list);
-  const [allShown, setAllShown] = useState(false);
+  const { list, allShown } = useSelector((state: RootState) => state.users);
+  const dispatch = useDispatch();
+
+  const handleClick = () =>
+    dispatch(allShown ? setShortList(3) : setFullList());
 
   return (
     <div className="app">
-      {(allShown ? list : list.slice(0, 3))?.map((item) => (
+      {list?.map((item) => (
         <UserRow key={item.email} userData={item} />
       ))}
 
-      <button
-        className="app_button"
-        onClick={() => setAllShown((prev) => !prev)}
-      >
+      <button className="app_button" onClick={handleClick}>
         {allShown ? "show less" : " view all"}
       </button>
     </div>
