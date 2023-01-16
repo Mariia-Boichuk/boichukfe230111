@@ -1,5 +1,5 @@
 import React from "react";
-import { cleanup, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import { Widget } from "./Widget";
 
@@ -12,29 +12,34 @@ const mockedData = {
   photo: "2.jpg",
 };
 
+const setup = () =>
+  render(<Widget userData={mockedData} setWidgetShown={jest.fn} />);
+
 describe("UserRow", () => {
-  beforeEach(() => {
-    render(<Widget userData={mockedData} setWidgetShown={jest.fn} />);
-  });
-
-  afterEach(cleanup);
-
   it("should render btn without errors", () => {
+    setup();
+
     const name = screen.getByText(/Brazil Izair/i);
     expect(name).toBeInTheDocument();
   });
 
   it("should render nickname without errors", () => {
+    setup();
+
     const nickname = screen.getByText(/brazilizair/i);
     expect(nickname).toBeInTheDocument();
   });
 
   it("should render position without errors", () => {
+    setup();
+
     const position = screen.getByText(/Managing Director/i);
     expect(position).toBeInTheDocument();
   });
 
   it("should render widget", async () => {
+    setup();
+
     const widg = screen.getByTestId("widget");
     expect(widg).toBeInTheDocument();
   });

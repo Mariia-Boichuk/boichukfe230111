@@ -3,10 +3,11 @@
   margin: 24px 22px 24px;
   background-color: #e5eaec;
   align-items: center;
-  max-width: 500px;
-  padding: 10px 15px;
-  width: 100%;
+  padding: 20px 15px;
   border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .user-info__name-and-role {
@@ -19,6 +20,11 @@
 .user-info__title {
   color: darkblue;
   font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+.user-info__name {
+  margin: 5px 0;
 }
 
 .user-info__view {
@@ -35,4 +41,26 @@
   margin-left: auto;
 
   color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .user-info {
+    margin: 20px 0;
+  }
+
+  .user-info__name-and-role {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .user-info__view {
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .user-info__title {
+    font-size: 10px;
+  }
 }

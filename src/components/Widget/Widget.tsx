@@ -21,14 +21,14 @@ export const Widget = ({
           X
         </button>
         <Avatar avatarUrl={userData?.photo} data-testid="Avatar" />
-        <div className="user-info__name-and-role">
-          <p className="user-info__name">{userData?.name || placeholderName}</p>
-          <p className="user-info__name">{userData?.position}</p>
 
-          <p className="user-info__name">phone: {userData?.phone}</p>
-          <p className="user-info__title">Email: {userData?.email}</p>
-          <p className="user-info__title">URL: {userData?.nickname}</p>
-        </div>
+        <p className="user-info__name">{userData?.name || placeholderName}</p>
+        <p className="user-info__name">{userData?.position}</p>
+
+        <p className="user-info__name">phone: {userData?.phone}</p>
+        <p className="user-info__title">Email: {userData?.email}</p>
+        <p className="user-info__title">URL: {userData?.nickname}</p>
+
         <button className="send_message">send message</button>
       </div>
     </div>
